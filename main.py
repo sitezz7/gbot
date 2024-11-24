@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 from fake_useragent import UserAgent
 from colorama import *
 import random  # 添加在文件开头的import部分
+from aiohttp_socks import ProxyConnector
 
 green = Fore.LIGHTGREEN_EX
 red = Fore.LIGHTRED_EX
@@ -21,7 +22,7 @@ class Grass:
     def __init__(self, userid, proxy):
         self.userid = userid
         self.proxy = proxy
-        self.ses = aiohttp.ClientSession()
+        self.ses = None
         self.connection_duration = (60 * 60 * 3) + 20 # 设置连接持续时间为3小时(10800秒)
 
     def log(self, msg):
@@ -41,7 +42,7 @@ class Grass:
         if proxy is None:
             proxy = await Grass.ipinfo()
         browser_id = uuid.uuid5(uuid.NAMESPACE_URL, proxy)
-        useragent = UserAgent().random
+        useragent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
         headers = {
             "Host": "proxy2.wynd.network:4650",
             "Connection": "Upgrade",
@@ -61,10 +62,11 @@ class Grass:
                     return
                 
                 self.log(f"{self.userid}开始与服务器建立连接...")
+                connector = ProxyConnector.from_url(proxy)
+                self.ses = aiohttp.ClientSession(connector=connector)
                 async with self.ses.ws_connect(
                     "wss://proxy2.wynd.network:4650/",
-                    headers=headers,
-                    proxy=self.proxy,
+                    headers=headers,    
                     timeout=1000,
                     autoclose=False,
                 ) as wss:
