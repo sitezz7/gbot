@@ -1,10 +1,8 @@
 import os
 import uuid
-import json
 import aiohttp
 import argparse
 from datetime import datetime, timezone
-from fake_useragent import UserAgent
 from colorama import *
 import random  # 添加在文件开头的import部分
 from aiohttp_socks import ProxyConnector
