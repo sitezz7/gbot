@@ -144,12 +144,11 @@ async def main():
     {red}grass 第二季超稳定无限多开脚本由[志贤说]开源，免费使用
     {red}持续更新web3撸毛项目，欢迎关注
     {white}Gihub: {green}github.com/zx-meet
-    {white}微信: {green}caba9527
+    {white}微信: {green}caba_9527
     {green}祝你好运！！！
           """
     )
 
-    token = open("token.txt", "r").read()
     userid = open("userid.txt", "r").read()
     if len(userid) <= 0:
         print(f"{red}错误 : {white}请先输入您的用户ID!")
