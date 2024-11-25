@@ -4,8 +4,14 @@
 - b 站：志贤说 [点击跳转](https://space.bilibili.com/87933252)
   https://space.bilibili.com/87933252
 - 实际运行效果视频
-  [大厂开发 Grass 二期、nodepay 最强稳定脚本开发运行效果来了！！！零撸空投领取，depin 项目合集](https://www.bilibili.com/video/BV1xrByYMEYL/?spm_id_from=333.999.0.0)
-  https://www.bilibili.com/video/BV1xrByYMEYL/?spm_id_from=333.999.0.0
+  [大厂开发 Grass 二期、nodepay 最强稳定脚本开发运行效果来了！！！零撸空投领取，depin 项目合集](https://www.bilibili.com/video/BV1xrByYMEYL)
+  https://www.bilibili.com/video/BV1xrByYMEYL
+- 手把手跑 gass 脚本教学
+  [手把手教你科技撸 grass！全网最细教程](https://www.bilibili.com/video/BV1xqzNYhEaQ/)
+  https://www.bilibili.com/video/BV1xqzNYhEaQ/
+- 教程文档
+  [手把手教你撸空投-grass 脚本使用](https://docs.qq.com/doc/DS3Nha2lSbUJGbkhH?u=530300f2b88c49b2867c94dee9f700be)
+  https://docs.qq.com/doc/DS3Nha2lSbUJGbkhH?u=530300f2b88c49b2867c94dee9f700be
 
 # 注册
 
