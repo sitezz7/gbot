@@ -1,6 +1,6 @@
 # grass 第二季超稳定无限多开脚本 由 志贤说 开源
 
-- 微信：caba9527
+- 微信：caba_9527
 - b 站：志贤说 [点击跳转](https://space.bilibili.com/87933252)
   https://space.bilibili.com/87933252
 - 实际运行效果视频
